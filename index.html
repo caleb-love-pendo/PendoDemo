@@ -25,7 +25,7 @@
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
     v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
         o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-        y=e.createElement(n);y.async=!0;y.src='https://cdn.eu.pendo.io/agent/static/'+apiKey+'/pendo.js';
+        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
         z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
 
         // This function creates visitors and accounts in Pendo
@@ -33,7 +33,7 @@
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
             visitor: {
-                id:              'Test Visitor 1' // Required if user is logged in
+                id:              <'Caleb Test'> // Required if user is logged in
                 // email:        // Recommended if using Pendo Feedback, or NPS Email
                 // full_name:    // Recommended if using Pendo Feedback
                 // role:         // Optional
@@ -43,7 +43,7 @@
             },
 
             account: {
-                id:              'Test Visitor 1' // Highly recommended, required if using Pendo Feedback
+                id:              <'Pendo Test'> // Highly recommended, required if using Pendo Feedback
                 // name:         // Optional
                 // is_paying:    // Recommended if using Pendo Feedback
                 // monthly_value:// Recommended if using Pendo Feedback
@@ -55,7 +55,7 @@
                 // as long as it's not one of the above reserved names.
             }
         });
-})('ca2d77f7-224d-4658-648b-05f47845f956');
+})('758434d6-672f-4326-4db4-64412a4af191');
 </script>
 
 </head>
